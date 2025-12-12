@@ -1,108 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio - Evelin Ganchala</title>
-    <link rel="stylesheet" href="css/estilos.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio - Evelin Ganchala</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
+  <div class="page">
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container">
-            <img src="assets/imagenes/foto.png" alt="Foto de Evelin" class="foto-perfil">
-            <div class="info-header">
-                <h1>Evelin Paola Ganchala Yancatipan</h1>
-                <p class="titulo">Desarrolladora Web | Backend | Laravel | Django</p>
-                <p class="location">Ecuador</p>
-                <a href="mailto:evelin.ganchala2463@utc.edu.ec" class="email">📩 evelin.ganchala2463@utc.edu.ec</a>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="assets/imagenes/foto.png" alt="Foto Evelin" class="profile-photo" />
+        <h1 class="name">Evelin Ganchala</h1>
+        <p class="role">Desarrolladora Web · Backend</p>
+
+        <div class="contact-list">
+          <a href="mailto:evelin.ganchala2463@utc.edu.ec" class="chip">✉ evelin.ganchala2463@utc.edu.ec</a>
+          <a href="https://gitlab.com/evel1n" target="_blank" class="chip"> GitLab</a>
+          <a href="#" target="_blank" class="chip">in / LinkedIn</a>
+        </div>
+
+        <div class="profile-actions">
+          <a class="btn-primary" href="assets/CV.pdf" download>Descargar CV</a>
+        </div>
+
+        <section class="panel skills">
+          <h3>Habilidades</h3>
+          <ul>
+            <li>Laravel · PHP</li>
+            <li>Django · Python</li>
+            <li>MySQL · PostgreSQL</li>
+            <li>HTML · CSS · JavaScript</li>
+            <li>Git · Deploy</li>
+          </ul>
+        </section>
+
+        <section class="panel education">
+          <h3>Educación</h3>
+          <p>Universidad Técnica de Cotopaxi<br/>2022 - 2026</p>
+        </section>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- header/top -->
+      <header class="main-header">
+        <div>
+          <h2 class="title">Portafolio profesional</h2>
+          <p class="subtitle">Proyectos reales · Sistemas backend · CRUD · Integraciones</p>
+        </div>
+      </header>
+
+      <!-- Experience & Projects -->
+      <section class="content">
+        <div class="left-col">
+          <div class="card experience">
+            <h3>Experiencia</h3>
+            <div class="exp-item">
+              <h4>Pasante - Gad Parroquial de Belisario Quevedo</h4>
+              <p>Mantenimiento preventivo y correctivo en equipos de cómputo, soporte y redes básicas.</p>
             </div>
+            <div class="exp-item">
+              <h4>Practicante de Desarrollo - UTC</h4>
+              <p>Desarrollo de sistemas transaccionales para la toma de decisiones.</p>
+            </div>
+          </div>
         </div>
-    </header>
 
-    <!-- SECCIÓN DE HABILIDADES -->
-    <section class="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Laravel</li>
-            <li>Django</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-        </ul>
-    </section>
+        <div class="right-col">
+          <div class="card projects">
+            <h3>Proyectos</h3>
+            <div class="projects-grid">
 
-    <!-- SECCIÓN DE EXPERIENCIA -->
-    <section class="experiencia">
-        <h2>Experiencia</h2>
-        <div class="experiencia-item">
-            <h3>Pasante</h3>
-            <p><strong>Gad Municipal de Latacunga</strong> — Mantenimiento preventivo y correctivo en equipos de computo.</p>
-        </div>
-        <div class="experiencia-item">
-            <h3>Practicante de Desarrollo</h3>
-            <p><strong>Universidad Técnica de Cotopaxi</strong> — Desarrollo de sistemas transaccionales para toma de decisiones.</p>
-        </div>
-    </section>
-
-    <!-- SECCIÓN DE PROYECTOS -->
-    <section class="proyectos">
-        <h2>Proyectos</h2>
-        <div class="grid-proyectos">
-            <div class="proyecto">
-                <h3>Center Adoption</h3>
+              <article class="project-card">
+                <h4>Center Adoption</h4>
                 <p>Sistema de adopciones con Django + PostgreSQL.</p>
-                <a href="https://gitlab.com/evel1n/center_adoption.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
-            </div>
-            <div class="proyecto">
-                <h3>Compu System</h3>
+                <a class="btn-outline" href="https://gitlab.com/evel1n/center_adoption.git" target="_blank" rel="noopener">Ver en GitLab</a>
+              </article>
+
+              <article class="project-card">
+                <h4>Compu System</h4>
                 <p>Sistema de venta de equipos de cómputo.</p>
-                <a href="https://gitlab.com/evel1n-group/compu.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
-            </div>
-            <div class="proyecto">
-                <h3>Deporte</h3>
+                <a class="btn-outline" href="https://gitlab.com/evel1n-group/compu.git" target="_blank" rel="noopener">Ver en GitLab</a>
+              </article>
+
+              <article class="project-card">
+                <h4>Deporte</h4>
                 <p>CRUD — Laravel.</p>
-                <a href="https://gitlab.com/evel1n-group/deporte.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
-            </div>
-            <div class="proyecto">
-                <h3>Fabricantes</h3>
+                <a class="btn-outline" href="https://gitlab.com/evel1n-group/deporte.git" target="_blank" rel="noopener">Ver en GitLab</a>
+              </article>
+
+              <article class="project-card">
+                <h4>Fabricantes</h4>
                 <p>Sistema de fabricantes — Laravel.</p>
-                <a href="https://gitlab.com/jhoan_tumaylla-group/fabricantes.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
-            </div>
-            <div class="proyecto">
-                <h3>Turismo</h3>
+                <a class="btn-outline" href="https://gitlab.com/jhoan_tumaylla-group/fabricantes.git" target="_blank" rel="noopener">Ver en GitLab</a>
+              </article>
+
+              <article class="project-card">
+                <h4>Turismo</h4>
                 <p>Proyecto turístico Ecuador.</p>
-                <a href="https://gitlab.com/alejoiza783/turismo_evlin_alex.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
-            </div>
-            <div class="proyecto">
-                <h3>Prótesis</h3>
+                <a class="btn-outline" href="https://gitlab.com/alejoiza783/turismo_evlin_alex.git" target="_blank" rel="noopener">Ver en GitLab</a>
+              </article>
+
+              <article class="project-card">
+                <h4>Prótesis</h4>
                 <p>Sistema de gestión de prótesis.</p>
-                <a href="https://gitlab.com/evel1n-group/protesis.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
-            </div>
-            <div class="proyecto">
-                <h3>Unigestor</h3>
-                <p>Sistema administrativo.</p>
-                <a href="https://gitlab.com/stalin.jaime1591/unigestor.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
-            </div>
-            <div class="proyecto">
-                <h3>Tienda</h3>
-                <p>CRUD completo — Laravel.</p>
-                <a href="https://gitlab.com/evel1n-group/tienda.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
-            </div>
-            <div class="proyecto">
-                <h3>Escuela</h3>
+                <a class="btn-outline" href="https://gitlab.com/evel1n-group/protesis.git" target="_blank" rel="noopener">Ver en GitLab</a>
+              </article>
+
+              <article class="project-card">
+                <h4>Unigestor</h4>
+                <p>Sistema administrativo multiuso.</p>
+                <a class="btn-outline" href="https://gitlab.com/stalin.jaime1591/unigestor.git" target="_blank" rel="noopener">Ver en GitLab</a>
+              </article>
+
+              <article class="project-card">
+                <h4>Tienda</h4>
+                <p>Sistema de tienda con CRUD completo.</p>
+                <a class="btn-outline" href="https://gitlab.com/evel1n-group/tienda.git" target="_blank" rel="noopener">Ver en GitLab</a>
+              </article>
+
+              <article class="project-card">
+                <h4>Escuela</h4>
                 <p>Sistema educativo.</p>
-                <a href="https://gitlab.com/evel1n-group/escuela.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
-            </div>
-        </div>
-    </section>
+                <a class="btn-outline" href="https://gitlab.com/evel1n-group/escuela.git" target="_blank" rel="noopener">Ver en GitLab</a>
+              </article>
 
-    <footer>
+            </div> <!-- .projects-grid -->
+          </div> <!-- .card.projects -->
+
+        </div> <!-- .right-col -->
+      </section> <!-- .content -->
+
+      <footer class="site-footer">
         © 2025 Evelin Ganchala — Hosteado en GitHub Pages
-    </footer>
+      </footer>
+    </main>
 
+  </div> <!-- .page -->
 </body>
 </html>

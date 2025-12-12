@@ -1,184 +1,214 @@
-/* ===============================
-   ESTILOS GENERALES
-================================== */
+/* PROFESSIONAL CORPORATE STYLE
+   Place this file at css/estilos.css
+*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --accent:#1f6feb; /* azul corporativo */
+  --muted:#6b7280;
+  --shadow: 0 8px 20px rgba(18, 38, 63, 0.08);
+  --radius:12px;
+  --gap:20px;
 }
 
-body {
-    background: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#162029;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
 }
 
-/* ===============================
-   NAV
-================================== */
-
-header {
-    background: #5a00b3;
-    padding: 15px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+/* layout */
+.page{
+  display:flex;
+  min-height:100vh;
+  gap:var(--gap);
 }
 
-.nav {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+/* SIDEBAR */
+.sidebar{
+  width:320px;
+  padding:36px 24px;
+  background:linear-gradient(180deg,#ffffff, #fbfdff);
+  border-right:1px solid rgba(16,24,40,0.04);
+  box-shadow: var(--shadow);
 }
 
-.nav .logo {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
+.profile{
+  max-width:100%;
 }
 
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.profile-photo{
+  width:116px;
+  height:116px;
+  object-fit:cover;
+  border-radius:50%;
+  border:6px solid white;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+  display:block;
+  margin:0 auto 16px;
 }
 
-.nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
+.name{
+  text-align:center;
+  font-weight:700;
+  font-size:20px;
+  margin:6px 0 2px;
 }
 
-.nav ul li a:hover {
-    text-decoration: underline;
+.role{
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+  margin-bottom:12px;
 }
 
-/* ===============================
-   HERO
-================================== */
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #8a2be2, #5a00b3);
-    color: white;
+.contact-list{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin:12px 0 18px;
 }
 
-.hero .foto {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 4px solid white;
-    object-fit: cover;
+.chip{
+  display:inline-block;
+  text-decoration:none;
+  color:#0b1220;
+  background:linear-gradient(90deg, rgba(31,111,235,0.08), rgba(31,111,235,0.03));
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:13px;
+  box-shadow: 0 2px 6px rgba(16,24,40,0.04);
 }
 
-.hero span {
-    color: #ffe60d;
-    font-weight: bold;
+.profile-actions{
+  display:flex;
+  justify-content:center;
+  margin:14px 0;
 }
 
-.subtitulo {
-    margin-top: 10px;
-    font-size: 18px;
-    opacity: 0.9;
+.btn-primary{
+  background:var(--accent);
+  color:white;
+  padding:10px 16px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow: 0 8px 20px rgba(31,111,235,0.14);
 }
 
-/* ===============================
-   SOBRE MI
-================================== */
-
-.sobre {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
+/* panels */
+.panel{
+  background:var(--card);
+  padding:16px;
+  border-radius:10px;
+  margin-top:16px;
+  box-shadow: var(--shadow);
 }
 
-.sobre h2 {
-    font-size: 28px;
-    color: #5a00b3;
-    margin-bottom: 15px;
+.panel h3{
+  margin:0 0 10px;
+  font-size:14px;
+  color:#0f1724;
+  border-bottom:2px solid rgba(31,111,235,0.06);
+  padding-bottom:8px;
 }
 
-/* ===============================
-   PROYECTOS
-================================== */
+.panel ul{ list-style:none; padding-left:0; margin:0 }
+.panel ul li{ font-size:14px; color:var(--muted); padding:6px 0 }
 
-.proyectos {
-    background: #fafafa;
-    padding: 50px 20px;
+/* MAIN area */
+.main{
+  flex:1;
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
 }
 
-.proyectos h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #5a00b3;
+.main-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  background:linear-gradient(90deg, rgba(31,111,235,0.03), rgba(31,111,235,0.01));
+  padding:18px;
+  border-radius:12px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
+.title{ margin:0; font-size:20px; font-weight:700 }
+.subtitle{ margin:4px 0 0; color:var(--muted); font-size:13px }
+
+/* content columns */
+.content{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  gap:20px;
+  align-items:start;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-    text-align: center;
+/* left column card */
+.card{
+  background:var(--card);
+  padding:18px;
+  border-radius:12px;
+  box-shadow: var(--shadow);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+.experience h3{ margin-top:0; }
+.exp-item{ margin-bottom:12px }
+.exp-item h4{ margin:0 0 4px; font-size:15px; color:#0f1724 }
+.exp-item p{ margin:0; color:var(--muted); font-size:14px }
+
+/* projects */
+.projects h3{ margin-top:0; margin-bottom:12px }
+.projects-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:14px;
 }
 
-.card .btn {
-    display: inline-block;
-    margin-top: 15px;
-    background: #5a00b3;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
+.project-card{
+  background: linear-gradient(180deg,#ffffff,#fbfdff);
+  border-radius:10px;
+  padding:14px;
+  box-shadow: 0 6px 16px rgba(12,20,35,0.06);
+  border:1px solid rgba(16,24,40,0.03);
 }
 
-.card .btn:hover {
-    background: #8a2be2;
+.project-card h4{ margin:0 0 6px; font-size:15px }
+.project-card p{ margin:0 0 10px; color:var(--muted); font-size:13px }
+
+.btn-outline{
+  display:inline-block;
+  padding:8px 12px;
+  text-decoration:none;
+  border-radius:8px;
+  border:1px solid rgba(31,111,235,0.14);
+  color:var(--accent);
+  font-weight:600;
+  background:linear-gradient(90deg, rgba(31,111,235,0.02), transparent);
 }
 
-/* ===============================
-   CONTACTO
-================================== */
-
-.contacto {
-    text-align: center;
-    padding: 40px 20px;
+/* footer */
+.site-footer{
+  margin-top:12px;
+  color:var(--muted);
+  font-size:13px;
+  text-align:center;
+  padding:12px 0;
 }
 
-.contacto h2 {
-    font-size: 28px;
-    color: #5a00b3;
-}
-
-/* ===============================
-   FOOTER
-================================== */
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #5a00b3;
-    color: white;
-    margin-top: 30px;
+/* RESPONSIVE */
+@media (max-width:1000px){
+  .page{flex-direction:column}
+  .sidebar{width:100%; order:2}
+  .main{order:1}
+  .content{grid-template-columns:1fr}
 }
