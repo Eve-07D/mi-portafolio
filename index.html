@@ -8,106 +8,100 @@
 </head>
 <body>
 
-    <!-- NAV -->
-    <header>
-        <nav class="nav">
-            <h1 class="logo">Mi Portafolio</h1>
-            <ul>
-                <li><a href="#sobre">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <img src="assets/imagenes/foto.png" alt="Foto de Evelin" class="foto-perfil">
+            <div class="info-header">
+                <h1>Evelin Paola Ganchala Yancatipan</h1>
+                <p class="titulo">Desarrolladora Web | Backend | Laravel | Django</p>
+                <p class="location">Ecuador</p>
+                <a href="mailto:evelin.ganchala2463@utc.edu.ec" class="email">📩 evelin.ganchala2463@utc.edu.ec</a>
+            </div>
+        </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <img src="assets/imagenes/foto.png" class="foto" alt="Foto de Evelin">
-        <h2>Hola, soy <span>Evelin Paola Ganchala Yancatipan</span></h2>
-        <p class="subtitulo">Desarrolladora Web | Backend | Laravel | Django</p>
+    <!-- SECCIÓN DE HABILIDADES -->
+    <section class="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Laravel</li>
+            <li>Django</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+        </ul>
     </section>
 
-    <!-- SOBRE MI -->
-    <section id="sobre" class="sobre">
-        <h2>Sobre mí</h2>
-        <p>
-            Soy desarrolladora web apasionada por Laravel, Django, MySQL y PostgreSQL.
-            Me encanta aprender, crear sistemas y mejorar cada día.
-        </p>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="proyectos">
-        <h2>Proyectos</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>Center Adoption</h3>
-                <p>Sistema de adopciones con Django + PostgreSQL.</p>
-                <a href="#" target="_blank" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="card">
-                <h3>Compu System</h3>
-                <p>Sistema de venta de equipos de cómputo.</p>
-                <a href="#" target="_blank" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="card">
-                <h3>Deporte</h3>
-                <p>CRUD — Laravel.</p>
-                <a href="#" target="_blank" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="card">
-                <h3>Fabricantes</h3>
-                <p>Sistema de fabricantes — Laravel.</p>
-                <a href="#" target="_blank" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="card">
-                <h3>Turismo</h3>
-                <p>Proyecto turístico Ecuador.</p>
-                <a href="#" target="_blank" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="card">
-                <h3>Prótesis</h3>
-                <p>Sistema de gestión de prótesis.</p>
-                <a href="#" target="_blank" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="card">
-                <h3>Unigestor</h3>
-                <p>Sistema administrativo.</p>
-                <a href="#" target="_blank" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="card">
-                <h3>Tienda</h3>
-                <p>CRUD completo — Laravel.</p>
-                <a href="#" target="_blank" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="card">
-                <h3>Escuela</h3>
-                <p>Sistema educativo.</p>
-                <a href="#" target="_blank" class="btn">Ver Proyecto</a>
-            </div>
-
+    <!-- SECCIÓN DE EXPERIENCIA -->
+    <section class="experiencia">
+        <h2>Experiencia</h2>
+        <div class="experiencia-item">
+            <h3>Pasante</h3>
+            <p><strong>Gad Municipal de Latacunga</strong> — Mantenimiento preventivo y correctivo en equipos de computo.</p>
+        </div>
+        <div class="experiencia-item">
+            <h3>Practicante de Desarrollo</h3>
+            <p><strong>Universidad Técnica de Cotopaxi</strong> — Desarrollo de sistemas transaccionales para toma de decisiones.</p>
         </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="contacto">
-        <h2>Contacto</h2>
-        <p>📩 Email: <strong>evelin.ganchala2463@utc.edu.ec</strong></p>
-        <p>🐱 GitHub / GitLab: <strong>evel1n</strong></p>
+    <!-- SECCIÓN DE PROYECTOS -->
+    <section class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="grid-proyectos">
+            <div class="proyecto">
+                <h3>Center Adoption</h3>
+                <p>Sistema de adopciones con Django + PostgreSQL.</p>
+                <a href="https://gitlab.com/evel1n/center_adoption.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3>Compu System</h3>
+                <p>Sistema de venta de equipos de cómputo.</p>
+                <a href="https://gitlab.com/evel1n-group/compu.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3>Deporte</h3>
+                <p>CRUD — Laravel.</p>
+                <a href="https://gitlab.com/evel1n-group/deporte.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3>Fabricantes</h3>
+                <p>Sistema de fabricantes — Laravel.</p>
+                <a href="https://gitlab.com/jhoan_tumaylla-group/fabricantes.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3>Turismo</h3>
+                <p>Proyecto turístico Ecuador.</p>
+                <a href="https://gitlab.com/alejoiza783/turismo_evlin_alex.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3>Prótesis</h3>
+                <p>Sistema de gestión de prótesis.</p>
+                <a href="https://gitlab.com/evel1n-group/protesis.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3>Unigestor</h3>
+                <p>Sistema administrativo.</p>
+                <a href="https://gitlab.com/stalin.jaime1591/unigestor.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3>Tienda</h3>
+                <p>CRUD completo — Laravel.</p>
+                <a href="https://gitlab.com/evel1n-group/tienda.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3>Escuela</h3>
+                <p>Sistema educativo.</p>
+                <a href="https://gitlab.com/evel1n-group/escuela.git" target="_blank" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        © 2025 Evelin Ganchala — Portafolio con estilo 💜
+        © 2025 Evelin Ganchala — Hosteado en GitHub Pages
     </footer>
 
 </body>
