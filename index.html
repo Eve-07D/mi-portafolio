@@ -1,217 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio — Evelin Paola Ganchala</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-        body {
-            background-color: #f5f8fc;
-            font-family: "Segoe UI", sans-serif;
-        }
-        /* Encabezado */
-        .header-box {
-            background-color: #cfe8ff; /* celeste suave */
-            border-radius: 20px;
-            padding: 25px;
-            max-width: 700px;
-            margin: auto;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        .profile-img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-        /* Datos personales */
-        .data-box {
-            background-color: #fff6e6; /* color suave que resalta con el celeste */
-            padding: 15px;
-            border-radius: 15px;
-            margin-bottom: 10px;
-            border-left: 6px solid #007bff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        /* Proyectos */
-        .project-card {
-            border: 2px solid #5a8fd9; /* borde azul ingeniería en sistemas */
-            border-radius: 18px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-        }
-        .git-logo {
-            width: 30px;
-            margin-bottom: 10px;
-        }
-        footer {
-            margin-top: 60px;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-            color: #666;
-        }
-            /* Animaciones suaves */
-        .project-card:hover {
-            transform: translateY(-6px);
-            transition: 0.3s ease;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-        }
-        /* Menú superior */
-        .navbar-custom {
-            background-color: #b7daf7;
-            padding: 12px;
-            border-radius: 0 0 15px 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .navbar-custom a {
-            color: #003e7e !important;
-            font-weight: 600;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Curriculum — Evelin Paola Ganchala</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+    body {
+        background: linear-gradient(135deg, #e8f3ff, #ffffff);
+        font-family: "Segoe UI", sans-serif;
+    }
+    .header-box {
+        background-color: #cfe8ff;
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .section-box {
+        background: white;
+        border-radius: 20px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        border-left: 6px solid #5a8fd9;
+    }
+    .list-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .list-item i {
+        font-size: 20px;
+        color: #005bbb;
+    }
+    .project-card {
+        border: 2px solid #5a8fd9;
+        border-radius: 18px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+    .project-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .git-logo {
+        width: 28px;
+        margin-bottom: 5px;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-<!-- MENÚ SUPERIOR -->
-<nav class="navbar navbar-expand-lg navbar-custom mb-4">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Portafolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#datos">Sobre mí</a></li>
-                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<br />
-<div class="header-box text-center">
-    <img src="IMG_3420.png" alt="Foto" class="profile-img" />
-    <h2 class="mt-3 fw-bold">Evelin Paola Ganchala Yancatipan</h2>
-    <p class="mb-1">Desarrolladora Web — Backend | Laravel · Django</p>
-    <p class="mb-1">Estudiante de la Universidad Técnica de Cotopaxi</p>
+<div class="header-box">
+    <img src="FOTO.png" class="profile-img" />
+    <h2 class="fw-bold mt-3">Evelin Paola Ganchala Yancatipan</h2>
+    <p>Desarrolladora Web — Backend (Laravel · Django)</p>
+    <p>Estudiante de la Universidad Técnica de Cotopaxi</p>
     <p>Edad: 22 años</p>
     <em>"La perseverancia convierte lo imposible en inevitable."</em>
 </div>
 
-<br />
-<div id="datos" class="container" style="max-width: 650px;">
-    <div class="data-box"><strong>Email:</strong> evelin.ganchala243@utc.edu.ec</div>
-    <div class="data-box"><strong>GitHub:</strong> ever1n</div>
-    <div class="data-box"><strong>GitLab:</strong> ever1n-group</div>
-    <div class="data-box"><strong>Idiomas:</strong> Inglés — B1</div>
-</div>
+<div class="container mt-5" style="max-width: 1100px;">
+    <div class="row">
 
-<br />
-<h3 id="proyectos" class="text-center fw-bold">Mis Proyectos</h3>
-<br />
+        <!-- LADO IZQUIERDO -->
+        <div class="col-md-4">
+            <div class="section-box">
+                <h4 class="fw-bold mb-3">Datos Personales</h4>
+                <div class="list-item"><i class="fa-solid fa-envelope"></i> evelin.ganchala243@utc.edu.ec</div>
+                <div class="list-item"><i class="fa-brands fa-github"></i> Eve-07D</div>
+                <div class="list-item"><i class="fa-brands fa-gitlab"></i> Evel1n</div>
+                <div class="list-item"><i class="fa-solid fa-language"></i> Inglés — B1</div>
+            </div>
 
-<div class="container">
-    <div class="row g-4">
-        <!-- PROYECTO 1 -->
-        <div class="col-md-6">
-            <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo" />
-                <h5>Center Adoption</h5>
-                <p>Sistema de adopciones con Django + PostgreSQL.</p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+            <div class="section-box">
+                <h4 class="fw-bold mb-3">Habilidades</h4>
+                <div class="list-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+                <div class="list-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                <div class="list-item"><i class="fa-brands fa-square-js"></i> JavaScript</div>
+                <div class="list-item"><i class="fa-brands fa-laravel"></i> Laravel</div>
+                <div class="list-item"><i class="fa-brands fa-python"></i> Django</div>
+            </div>
+
+            <div class="section-box">
+                <h4 class="fw-bold mb-3">Educación</h4>
+                <p class="m-0"><strong>Ingeniería en Sistemas</strong></p>
+                <p class="m-0">Universidad Técnica de Cotopaxi</p>
+                <p class="m-0">2022 - 2026</p>
             </div>
         </div>
 
-        <!-- 2 -->
-        <div class="col-md-6">
-            <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo" />
-                <h5>Compu System</h5>
-                <p>Sistema de venta de equipos de computación.</p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+        <!-- LADO DERECHO -->
+        <div class="col-md-8">
+            <div class="section-box">
+                <h4 class="fw-bold mb-3">Experiencia</h4>
+                <p><strong>Pasante | GAD Municipal de Latacunga</strong><br>Mantenimiento preventivo y equipos de cómputo.</p>
+                <p><strong>Practicante de Desarrollo | Universidad Técnica de Cotopaxi</strong><br>Sistemas web transaccionales.</p>
+            </div>
+
+            <div class="section-box">
+                <h4 class="fw-bold mb-3">Proyectos</h4>
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
+                            <h5>Center Adoption</h5>
+                            <p>Sistema de adopciones Django.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
+                            <h5>Compu System</h5>
+                            <p>Venta de equipos computacionales.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
+                            <h5>Deporte</h5>
+                            <p>CRUD en Laravel.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
+                            <h5>Fabricantes</h5>
+                            <p>Sistema de fabricantes.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
-        <!-- 3 -->
-        <div class="col-md-6">
-            <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo" />
-                <h5>Deporte</h5>
-                <p>CRUD realizado en Laravel.</p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
-            </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="col-md-6">
-            <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo" />
-                <h5>Fabricantes</h5>
-                <p>Sistema de gestión de fabricantes.</p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
-            </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="col-md-6">
-            <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo" />
-                <h5>Turismo</h5>
-                <p>Proyecto turístico Ecuador.</p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
-            </div>
-        </div>
-
-        <!-- 6 -->
-        <div class="col-md-6">
-            <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo" />
-                <h5>Prótesis</h5>
-                <p>Sistema de gestión de prótesis con Laravel.</p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
-            </div>
-        </div>
-
-        <!-- 7 -->
-        <div class="col-md-6">
-            <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo" />
-                <h5>Unigestor</h5>
-                <p>Sistema administrativo multiuso.</p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
-            </div>
-        </div>
-
-        <!-- 8 -->
-        <div class="col-md-6">
-            <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo" />
-                <h5>Tienda</h5>
-                <p>Sistema CRUD completo.</p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
-            </div>
-        </div>
-
-        <!-- 9 -->
-        <div class="col-md-6">
-            <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo" />
-                <h5>Escuela</h5>
-                <p>Sistema educativo en Laravel.</p>
-                <a href="#" class="btn btn-primary">Ver Proyecto</a>
-            </div>
-        </div>
     </div>
 </div>
 
-<footer>
-    © 2025 Evelin Paola Ganchala — Portafolio Profesional
-</footer>
+<footer class="text-center mt-4 mb-3">© 2025 Evelin Paola Ganchala — Curriculum Profesional</footer>
 
 </body>
 </html>
