@@ -1,152 +1,157 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Poppins", sans-serif;
+/* ====== RESET GENERAL ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-body{
-    background:#f8f8ff;
-    display:flex;
-    justify-content:center;
+body {
+    background: #f9fafb;
+    color: #333;
 }
 
-/* LAYOUT */
-.page{
-    width:100%;
-    max-width:1300px;
-    display:flex;
-    padding:20px;
-    gap:20px;
+/* ====== ENCABEZADO NUEVO ====== */
+.encabezado {
+    background: #a3c9ff; /* Azul pastel */
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* SIDEBAR */
-.sidebar{
-    width:28%;
-    background:#ffffff;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-    height:fit-content;
+.foto-central {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 15px;
 }
 
-.perfil{
-    text-align:center;
+.nombre-header {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
 }
 
-.foto{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    margin-bottom:10px;
-    border:4px solid #dbe4ff;
+.rol-header {
+    font-size: 17px;
+    margin-top: 5px;
+    color: #2f2f2f;
 }
 
-.nombre{
-    font-size:22px;
-    font-weight:600;
+.frase {
+    margin-top: 12px;
+    font-style: italic;
+    font-size: 16px;
+    color: #27374d;
 }
 
-.rol{
-    margin-top:5px;
-    font-size:14px;
-    color:#555;
+/* ====== DATOS ====== */
+.datos {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1b1b1b;
 }
 
-/* BOXES */
-.info-box{
-    margin-top:25px;
-    background:#f4f4ff;
-    padding:15px;
-    border-radius:10px;
+.datos p strong {
+    color: #213555;
 }
 
-.info-box h3{
-    margin-bottom:10px;
+/* ====== LÍNEA VERDE OPACA ====== */
+.linea-verde {
+    width: 100%;
+    height: 7px;
+    background: rgba(0, 128, 0, 0.4); /* Verde opaco */
+    margin: 30px 0;
 }
 
-.info-box ul{
-    list-style:none;
+/* ====== PROYECTOS ====== */
+.proyectos {
+    text-align: center;
+    padding: 30px 20px;
 }
 
-.info-box li{
-    margin:4px 0;
+.proyectos h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #2b2b2b;
 }
 
-/* MAIN */
-.main{
-    width:72%;
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 0 10px rgba(0,0,0,0.08);
+/* ====== GRID DE TARJETAS ====== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 20px;
 }
 
-/* HEADER */
-.header{
-    margin-bottom:20px;
+/* ====== TARJETAS ====== */
+.card {
+    padding: 22px;
+    border-radius: 15px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.09);
+    transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.header h1{
-    font-size:30px;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-.header p{
-    color:#666;
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
-/* GRID PROYECTOS */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
-    gap:20px;
-    margin-top:20px;
+.card p {
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 
-.card{
-    padding:20px;
-    border-radius:15px;
-    background:white;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-    text-align:center;
+/* ====== COLORES PASTEL PARA TARJETAS ====== */
+.pastel-1 { background: #ffe5ec; }
+.pastel-2 { background: #e8faff; }
+.pastel-3 { background: #fff5cc; }
+.pastel-4 { background: #f3e8ff; }
+.pastel-5 { background: #e9ffe8; }
+.pastel-6 { background: #ffe8d9; }
+.pastel-7 { background: #e1f0ff; }
+.pastel-8 { background: #faf0d4; }
+.pastel-9 { background: #e9e9ff; }
+
+/* ====== BOTONES NUEVOS ====== */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #ff7f5f; /* Naranja suave */
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background .2s ease;
 }
 
-.card h3{
-    margin-bottom:10px;
+.btn i {
+    margin-right: 6px;
+    font-size: 16px;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 15px;
-    background:#444;
-    color:white;
-    border-radius:8px;
-    text-decoration:none;
-    transition:.2s;
+.btn:hover {
+    background: #ff6a45;
 }
 
-.btn:hover{
-    background:#000;
-}
-
-/* COLORES PASTEL */
-.pastel-1{background:#fde2e4;}
-.pastel-2{background:#fad2e1;}
-.pastel-3{background:#e2ece9;}
-.pastel-4{background:#bee1e6;}
-.pastel-5{background:#fdfcdc;}
-.pastel-6{background:#e8e8ff;}
-.pastel-7{background:#ffe5ec;}
-.pastel-8{background:#fff1e6;}
-.pastel-9{background:#e3f6f5;}
-
-/* RESPONSIVE */
-@media(max-width:1000px){
-    .page{
-        flex-direction:column;
-    }
-    .sidebar, .main{
-        width:100%;
-    }
+/* ====== FOOTER ====== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #4a4a4a;
 }
