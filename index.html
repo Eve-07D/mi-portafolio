@@ -52,6 +52,7 @@
         background-color: white;
         box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         transition: 0.3s;
+        height: 100%;
     }
     .project-card:hover {
         transform: translateY(-6px);
@@ -67,7 +68,7 @@
 <body>
 
 <div class="header-box">
-    <img src="FOTO.png" class="profile-img" />
+    <img src="foto.png" class="profile-img" />
     <h2 class="fw-bold mt-3">Evelin Paola Ganchala Yancatipan</h2>
     <p>Desarrolladora Web — Backend (Laravel · Django)</p>
     <p>Estudiante de la Universidad Técnica de Cotopaxi</p>
@@ -78,11 +79,13 @@
 <div class="container mt-5" style="max-width: 1100px;">
     <div class="row">
 
-        <!-- LADO IZQUIERDO -->
+        <!-- COLUMNA IZQUIERDA -->
         <div class="col-md-4">
             <div class="section-box">
                 <h4 class="fw-bold mb-3">Datos Personales</h4>
                 <div class="list-item"><i class="fa-solid fa-envelope"></i> evelin.ganchala243@utc.edu.ec</div>
+                <div class="list-item"><i class="fa-solid fa-phone"></i> 0979111575</div>
+                <div class="list-item"><i class="fa-solid fa-location-dot"></i> Pujilí, Cotopaxi</div>
                 <div class="list-item"><i class="fa-brands fa-github"></i> Eve-07D</div>
                 <div class="list-item"><i class="fa-brands fa-gitlab"></i> Evel1n</div>
                 <div class="list-item"><i class="fa-solid fa-language"></i> Inglés — B1</div>
@@ -91,7 +94,6 @@
             <div class="section-box">
                 <h4 class="fw-bold mb-3">Habilidades</h4>
                 <div class="list-item"><i class="fa-brands fa-html5"></i> HTML5</div>
-                <div class="list-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
                 <div class="list-item"><i class="fa-brands fa-square-js"></i> JavaScript</div>
                 <div class="list-item"><i class="fa-brands fa-laravel"></i> Laravel</div>
                 <div class="list-item"><i class="fa-brands fa-python"></i> Django</div>
@@ -101,52 +103,114 @@
                 <h4 class="fw-bold mb-3">Educación</h4>
                 <p class="m-0"><strong>Ingeniería en Sistemas</strong></p>
                 <p class="m-0">Universidad Técnica de Cotopaxi</p>
-                <p class="m-0">2022 - 2026</p>
             </div>
         </div>
 
-        <!-- LADO DERECHO -->
+        <!-- COLUMNA DERECHA -->
         <div class="col-md-8">
             <div class="section-box">
                 <h4 class="fw-bold mb-3">Experiencia</h4>
-                <p><strong>Pasante | GAD Municipal de Latacunga</strong><br>Mantenimiento preventivo y equipos de cómputo.</p>
-                <p><strong>Practicante de Desarrollo | Universidad Técnica de Cotopaxi</strong><br>Sistemas web transaccionales.</p>
+                <p><strong>GAD Municipal de Latacunga</strong><br>
+                Mantenimiento preventivo, equipos de cómputo <br>
+                y apoyo en laboratorios de la Facultad de CIYA.</p>
+
+                <p><strong>Universidad Técnica de Cotopaxi</strong><br>
+                Desarrollo de sistemas web transaccionales.</p>
             </div>
 
             <div class="section-box">
                 <h4 class="fw-bold mb-3">Proyectos</h4>
                 <div class="row g-3">
 
+                    <!-- PROYECTOS (9 TOTAL) -->
                     <div class="col-md-6">
+                        <a href="https://gitlab.com/evel1n/center_adoption.git" target="_blank" style="text-decoration:none; color:black;">
                         <div class="project-card">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
                             <h5>Center Adoption</h5>
-                            <p>Sistema de adopciones Django.</p>
+                            <p>Sistema de adopciones (Django).</p>
                         </div>
+                        </a>
                     </div>
 
                     <div class="col-md-6">
+                        <a href="https://gitlab.com/evel1n-group/compu.git" target="_blank" style="text-decoration:none; color:black;">
                         <div class="project-card">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
                             <h5>Compu System</h5>
                             <p>Venta de equipos computacionales.</p>
                         </div>
+                        </a>
                     </div>
 
                     <div class="col-md-6">
+                        <a href="https://gitlab.com/evel1n-group/deporte.git" target="_blank" style="text-decoration:none; color:black;">
                         <div class="project-card">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
                             <h5>Deporte</h5>
                             <p>CRUD en Laravel.</p>
                         </div>
+                        </a>
                     </div>
 
                     <div class="col-md-6">
+                        <a href="https://gitlab.com/jhoan_tumaylla-group/fabricantes.git" target="_blank" style="text-decoration:none; color:black;">
                         <div class="project-card">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
                             <h5>Fabricantes</h5>
                             <p>Sistema de fabricantes.</p>
                         </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a href="https://gitlab.com/alejoiza783/turismo_evlin_alex.git" target="_blank" style="text-decoration:none; color:black;">
+                        <div class="project-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
+                            <h5>Turismo</h5>
+                            <p>Plataforma turística (Laravel).</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a href="https://gitlab.com/evel1n-group/protesis.git" target="_blank" style="text-decoration:none; color:black;">
+                        <div class="project-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
+                            <h5>Prótesis</h5>
+                            <p>Sistema de prótesis (Laravel).</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a href="https://gitlab.com/stalin.jaime1591/unigestor.git" target="_blank" style="text-decoration:none; color:black;">
+                        <div class="project-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
+                            <h5>UniGestor</h5>
+                            <p>Gestión académica.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a href="https://gitlab.com/evel1n-group/tienda.git" target="_blank" style="text-decoration:none; color:black;">
+                        <div class="project-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
+                            <h5>Tienda</h5>
+                            <p>Sistema de productos.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a href="https://gitlab.com/evel1n-group/escuela.git" target="_blank" style="text-decoration:none; color:black;">
+                        <div class="project-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" class="git-logo">
+                            <h5>Escuela</h5>
+                            <p>Gestión escolar.</p>
+                        </div>
+                        </a>
                     </div>
 
                 </div>
