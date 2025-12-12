@@ -1,149 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portafolio - Evelin Ganchala</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/estilos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Evelin Ganchala</title>
+    <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
-  <div class="page">
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="assets/imagenes/foto.png" alt="Foto Evelin" class="profile-photo" />
-        <h1 class="name">Evelin Ganchala</h1>
-        <p class="role">Desarrolladora Web · Backend</p>
+    <div class="page">
 
-        <div class="contact-list">
-          <a href="mailto:evelin.ganchala2463@utc.edu.ec" class="chip">✉ evelin.ganchala2463@utc.edu.ec</a>
-          <a href="https://gitlab.com/evel1n" target="_blank" class="chip"> GitLab</a>
-          <a href="#" target="_blank" class="chip">in / LinkedIn</a>
-        </div>
-
-        <div class="profile-actions">
-          <a class="btn-primary" href="assets/CV.pdf" download>Descargar CV</a>
-        </div>
-
-        <section class="panel skills">
-          <h3>Habilidades</h3>
-          <ul>
-            <li>Laravel · PHP</li>
-            <li>Django · Python</li>
-            <li>MySQL · PostgreSQL</li>
-            <li>HTML · CSS · JavaScript</li>
-            <li>Git · Deploy</li>
-          </ul>
-        </section>
-
-        <section class="panel education">
-          <h3>Educación</h3>
-          <p>Universidad Técnica de Cotopaxi<br/>2022 - 2026</p>
-        </section>
-      </div>
-    </aside>
-
-    <!-- MAIN -->
-    <main class="main">
-      <!-- header/top -->
-      <header class="main-header">
-        <div>
-          <h2 class="title">Portafolio profesional</h2>
-          <p class="subtitle">Proyectos reales · Sistemas backend · CRUD · Integraciones</p>
-        </div>
-      </header>
-
-      <!-- Experience & Projects -->
-      <section class="content">
-        <div class="left-col">
-          <div class="card experience">
-            <h3>Experiencia</h3>
-            <div class="exp-item">
-              <h4>Pasante - Gad Parroquial de Belisario Quevedo</h4>
-              <p>Mantenimiento preventivo y correctivo en equipos de cómputo, soporte y redes básicas.</p>
+        <!-- SIDEBAR (VA PRIMERO) -->
+        <aside class="sidebar">
+            <div class="perfil">
+                <img src="assets/imagenes/foto.png" alt="Foto" class="foto">
+                <h2 class="nombre">Evelin Paola<br>Ganchala Yancatipan</h2>
+                <p class="rol">Desarrolladora Web</p>
             </div>
-            <div class="exp-item">
-              <h4>Practicante de Desarrollo - UTC</h4>
-              <p>Desarrollo de sistemas transaccionales para la toma de decisiones.</p>
+
+            <div class="info-box">
+                <h3>Contacto</h3>
+                <p>📩 Email:<br><strong>evelin.ganchala2463@utc.edu.ec</strong></p>
+                <p>🐱 GitHub:<br><strong>evel1n</strong></p>
+                <p>📝 GitLab:<br><strong>evel1n-group</strong></p>
             </div>
-          </div>
-        </div>
 
-        <div class="right-col">
-          <div class="card projects">
-            <h3>Proyectos</h3>
-            <div class="projects-grid">
+            <div class="info-box">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>Laravel</li>
+                    <li>Django</li>
+                    <li>MySQL / PostgreSQL</li>
+                    <li>HTML, CSS, JS</li>
+                </ul>
+            </div>
+        </aside>
 
-              <article class="project-card">
-                <h4>Center Adoption</h4>
-                <p>Sistema de adopciones con Django + PostgreSQL.</p>
-                <a class="btn-outline" href="https://gitlab.com/evel1n/center_adoption.git" target="_blank" rel="noopener">Ver en GitLab</a>
-              </article>
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main">
 
-              <article class="project-card">
-                <h4>Compu System</h4>
-                <p>Sistema de venta de equipos de cómputo.</p>
-                <a class="btn-outline" href="https://gitlab.com/evel1n-group/compu.git" target="_blank" rel="noopener">Ver en GitLab</a>
-              </article>
+            <header class="header">
+                <h1>Mi Portafolio Profesional</h1>
+                <p>Proyectos desarrollados en Laravel, Django y más.</p>
+            </header>
 
-              <article class="project-card">
-                <h4>Deporte</h4>
-                <p>CRUD — Laravel.</p>
-                <a class="btn-outline" href="https://gitlab.com/evel1n-group/deporte.git" target="_blank" rel="noopener">Ver en GitLab</a>
-              </article>
+            <!-- PROYECTOS -->
+            <section class="proyectos">
+                <h2>Mis Proyectos</h2>
 
-              <article class="project-card">
-                <h4>Fabricantes</h4>
-                <p>Sistema de fabricantes — Laravel.</p>
-                <a class="btn-outline" href="https://gitlab.com/jhoan_tumaylla-group/fabricantes.git" target="_blank" rel="noopener">Ver en GitLab</a>
-              </article>
+                <div class="grid">
 
-              <article class="project-card">
-                <h4>Turismo</h4>
-                <p>Proyecto turístico Ecuador.</p>
-                <a class="btn-outline" href="https://gitlab.com/alejoiza783/turismo_evlin_alex.git" target="_blank" rel="noopener">Ver en GitLab</a>
-              </article>
+                    <div class="card pastel-1">
+                        <h3>Center Adoption</h3>
+                        <p>Sistema de adopciones con Django + PostgreSQL.</p>
+                        <a href="https://gitlab.com/evel1n/center_adoption.git" target="_blank" class="btn">Ver Proyecto</a>
+                    </div>
 
-              <article class="project-card">
-                <h4>Prótesis</h4>
-                <p>Sistema de gestión de prótesis.</p>
-                <a class="btn-outline" href="https://gitlab.com/evel1n-group/protesis.git" target="_blank" rel="noopener">Ver en GitLab</a>
-              </article>
+                    <div class="card pastel-2">
+                        <h3>Compu System</h3>
+                        <p>Sistema de venta de equipos de cómputo.</p>
+                        <a href="https://gitlab.com/evel1n-group/compu.git" target="_blank" class="btn">Ver Proyecto</a>
+                    </div>
 
-              <article class="project-card">
-                <h4>Unigestor</h4>
-                <p>Sistema administrativo multiuso.</p>
-                <a class="btn-outline" href="https://gitlab.com/stalin.jaime1591/unigestor.git" target="_blank" rel="noopener">Ver en GitLab</a>
-              </article>
+                    <div class="card pastel-3">
+                        <h3>Deporte</h3>
+                        <p>CRUD — Laravel.</p>
+                        <a href="https://gitlab.com/evel1n-group/deporte.git" target="_blank" class="btn">Ver Proyecto</a>
+                    </div>
 
-              <article class="project-card">
-                <h4>Tienda</h4>
-                <p>Sistema de tienda con CRUD completo.</p>
-                <a class="btn-outline" href="https://gitlab.com/evel1n-group/tienda.git" target="_blank" rel="noopener">Ver en GitLab</a>
-              </article>
+                    <div class="card pastel-4">
+                        <h3>Fabricantes</h3>
+                        <p>Sistema de fabricantes — Laravel.</p>
+                        <a href="https://gitlab.com/jhoan_tumaylla-group/fabricantes.git" target="_blank" class="btn">Ver Proyecto</a>
+                    </div>
 
-              <article class="project-card">
-                <h4>Escuela</h4>
-                <p>Sistema educativo.</p>
-                <a class="btn-outline" href="https://gitlab.com/evel1n-group/escuela.git" target="_blank" rel="noopener">Ver en GitLab</a>
-              </article>
+                    <div class="card pastel-5">
+                        <h3>Turismo</h3>
+                        <p>Proyecto turístico Ecuador.</p>
+                        <a href="https://gitlab.com/alejoiza783/turismo_evlin_alex.git" target="_blank" class="btn">Ver Proyecto</a>
+                    </div>
 
-            </div> <!-- .projects-grid -->
-          </div> <!-- .card.projects -->
+                    <div class="card pastel-6">
+                        <h3>Prótesis</h3>
+                        <p>Sistema de gestión de prótesis.</p>
+                        <a href="https://gitlab.com/evel1n-group/protesis.git" target="_blank" class="btn">Ver Proyecto</a>
+                    </div>
 
-        </div> <!-- .right-col -->
-      </section> <!-- .content -->
+                    <div class="card pastel-7">
+                        <h3>Unigestor</h3>
+                        <p>Sistema administrativo multiuso.</p>
+                        <a href="https://gitlab.com/stalin.jaime1591/unigestor.git" target="_blank" class="btn">Ver Proyecto</a>
+                    </div>
 
-      <footer class="site-footer">
-        © 2025 Evelin Ganchala — Hosteado en GitHub Pages
-      </footer>
-    </main>
+                    <div class="card pastel-8">
+                        <h3>Tienda</h3>
+                        <p>Sistema de tienda con CRUD completo.</p>
+                        <a href="https://gitlab.com/evel1n-group/tienda.git" target="_blank" class="btn">Ver Proyecto</a>
+                    </div>
 
-  </div> <!-- .page -->
+                    <div class="card pastel-9">
+                        <h3>Escuela</h3>
+                        <p>Sistema educativo.</p>
+                        <a href="https://gitlab.com/evel1n-group/escuela.git" target="_blank" class="btn">Ver Proyecto</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <footer>
+                © 2025 Evelin Ganchala — Portafolio Profesional
+            </footer>
+
+        </main>
+    </div>
+
 </body>
 </html>
