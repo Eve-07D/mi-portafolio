@@ -1,4 +1,4 @@
-/* ====== RESET GENERAL ====== */
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -7,151 +7,136 @@
 }
 
 body {
-    background: #f9fafb;
-    color: #333;
+    background: #f2f6f9; /* Gris azulado suave */
+    color: #2a2a2a;
+    line-height: 1.5;
 }
 
-/* ====== ENCABEZADO NUEVO ====== */
+/* ===== ENCABEZADO ===== */
 .encabezado {
-    background: #a3c9ff; /* Azul pastel */
+    background: #D7E7FF; /* Azul pastel tecnológico */
     text-align: center;
-    padding: 50px 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 45px 20px;
+    border-bottom: 3px solid #A1D8B7; /* Verde ingeniería suave */
 }
 
 .foto-central {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    border: 4px solid white;
     object-fit: cover;
-    border: 5px solid white;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .nombre-header {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #1d3557; /* Azul ingeniería */
 }
 
 .rol-header {
-    font-size: 17px;
+    font-size: 16px;
+    color: #264653;
     margin-top: 5px;
-    color: #2f2f2f;
 }
 
 .frase {
-    margin-top: 12px;
+    font-size: 15px;
     font-style: italic;
-    font-size: 16px;
-    color: #27374d;
+    color: #3a4f63;
+    margin-top: 10px;
 }
 
-/* ====== DATOS ====== */
 .datos {
     margin-top: 20px;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #1b1b1b;
 }
 
-.datos p strong {
-    color: #213555;
+.datos p {
+    font-size: 15px;
+    color: #1d3557;
+    margin-bottom: 5px;
 }
 
-/* ====== LÍNEA VERDE OPACA ====== */
+/* ===== LÍNEA VERDE ===== */
 .linea-verde {
     width: 100%;
-    height: 7px;
-    background: rgba(0, 128, 0, 0.4); /* Verde opaco */
-    margin: 30px 0;
+    height: 6px;
+    background: rgba(41, 171, 135, 0.5); /* Verde ingeniería */
+    margin: 25px 0;
 }
 
-/* ====== PROYECTOS ====== */
+/* ===== PROYECTOS ===== */
 .proyectos {
     text-align: center;
-    padding: 30px 20px;
-}
-
-.proyectos h2 {
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #2b2b2b;
-}
-
-/* ====== GRID DE TARJETAS ====== */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
     padding: 20px;
 }
 
-/* ====== TARJETAS ====== */
-.card {
-    padding: 22px;
-    border-radius: 15px;
-    text-align: center;
-    color: #333;
-    box-shadow: 0 5px 12px rgba(0,0,0,0.09);
-    transition: transform .2s ease, box-shadow .2s ease;
+.proyectos h2 {
+    font-size: 24px;
+    color: #1d3557;
+    margin-bottom: 20px;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+/* TODO EN UNA SOLA COLUMNA */
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== TARJETAS ===== */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-left: 5px solid #A1D8B7; /* Verde elegante */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
 .card h3 {
     font-size: 20px;
+    color: #1d3557;
     margin-bottom: 8px;
-    font-weight: 600;
 }
 
 .card p {
-    font-size: 15px;
-    margin-bottom: 15px;
+    font-size: 14px;
+    color: #2a2a2a;
+    margin-bottom: 12px;
 }
 
-/* ====== COLORES PASTEL PARA TARJETAS ====== */
-.pastel-1 { background: #ffe5ec; }
-.pastel-2 { background: #e8faff; }
-.pastel-3 { background: #fff5cc; }
-.pastel-4 { background: #f3e8ff; }
-.pastel-5 { background: #e9ffe8; }
-.pastel-6 { background: #ffe8d9; }
-.pastel-7 { background: #e1f0ff; }
-.pastel-8 { background: #faf0d4; }
-.pastel-9 { background: #e9e9ff; }
-
-/* ====== BOTONES NUEVOS ====== */
+/* ===== BOTÓN PROFESIONAL ===== */
 .btn {
-    display: inline-block;
-    padding: 10px 16px;
-    background: #ff7f5f; /* Naranja suave */
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    background: #2a9d8f; /* Verde-teal profesional */
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
+    font-size: 14px;
     font-weight: 600;
-    transition: background .2s ease;
+    transition: 0.2s ease;
 }
 
 .btn i {
-    margin-right: 6px;
     font-size: 16px;
 }
 
 .btn:hover {
-    background: #ff6a45;
+    background: #21867a;
 }
 
-/* ====== FOOTER ====== */
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 15px;
-    color: #4a4a4a;
+    color: #3a4f63;
+    font-size: 14px;
+    padding: 25px 0;
+    margin-top: 20px;
 }
