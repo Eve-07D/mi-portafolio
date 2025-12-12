@@ -1,111 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio - Evelin Ganchala</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
 
+    <!-- NAV -->
     <header>
-        <h1 class="logo">Evelin</h1>
-        <nav>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+        <nav class="nav">
+            <h1 class="logo">Mi Portafolio</h1>
+            <ul>
+                <li><a href="#sobre">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-card">
-            <img src="assets/imagenes/foto.png" alt="Foto de Evelin" class="foto">
-            <h2>Hola, soy <span>Evelin Paola Ganchala Yancatipan</span></h2>
-            <p class="subtitulo">Desarrolladora Web • Backend • Laravel • Django</p>
-        </div>
+        <img src="assets/imagenes/foto.png" class="foto" alt="Foto de Evelin">
+        <h2>Hola, soy <span>Evelin Paola Ganchala Yancatipan</span></h2>
+        <p class="subtitulo">Desarrolladora Web | Backend | Laravel | Django</p>
     </section>
 
-    <section id="sobre-mi" class="seccion">
+    <!-- SOBRE MI -->
+    <section id="sobre" class="sobre">
         <h2>Sobre mí</h2>
-        <p class="texto">
-            Tengo <strong>22 años</strong> y soy estudiante de la 
-            <strong>Universidad Técnica de Cotopaxi</strong>.  
-            Me apasiona el desarrollo web, especialmente en 
-            <strong>Laravel, Django, MySQL y PostgreSQL</strong>.  
+        <p>
+            Tengo 22 años y soy estudiante de la Universidad Técnica de Cotopaxi.
+            Me apasiona el desarrollo web, especialmente en Laravel, Django, MySQL y PostgreSQL.
             Me encanta aprender nuevas tecnologías y mejorar cada día.
         </p>
     </section>
 
-    <section id="proyectos" class="seccion">
-        <h2>Mis Proyectos</h2>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
 
         <div class="grid">
 
             <div class="card">
                 <h3>Center Adoption</h3>
                 <p>Sistema de adopciones con Django + PostgreSQL.</p>
-                <a href="https://gitlab.com/evel1n/center_adoption.git" target="_blank">Ver Proyecto</a>
+                <a class="btn">Ver Proyecto</a>
             </div>
 
             <div class="card">
                 <h3>Compu System</h3>
                 <p>Sistema de venta de equipos de cómputo.</p>
-                <a href="https://gitlab.com/evel1n-group/compu.git" target="_blank">Ver Proyecto</a>
+                <a class="btn">Ver Proyecto</a>
             </div>
 
             <div class="card">
                 <h3>Deporte</h3>
-                <p>CRUD completo con Laravel.</p>
-                <a href="https://gitlab.com/evel1n-group/deporte.git" target="_blank">Ver Proyecto</a>
+                <p>CRUD — Laravel.</p>
+                <a class="btn">Ver Proyecto</a>
             </div>
 
             <div class="card">
                 <h3>Fabricantes</h3>
                 <p>Sistema de fabricantes — Laravel.</p>
-                <a href="https://gitlab.com/jhoan_tumaylla-group/fabricantes.git" target="_blank">Ver Proyecto</a>
+                <a class="btn">Ver Proyecto</a>
             </div>
 
             <div class="card">
                 <h3>Turismo</h3>
                 <p>Proyecto turístico Ecuador.</p>
-                <a href="https://gitlab.com/alejoiza783/turismo_evlin_alex.git" target="_blank">Ver Proyecto</a>
+                <a class="btn">Ver Proyecto</a>
             </div>
 
             <div class="card">
                 <h3>Prótesis</h3>
                 <p>Sistema de gestión de prótesis.</p>
-                <a href="https://gitlab.com/evel1n-group/protesis.git" target="_blank">Ver Proyecto</a>
+                <a class="btn">Ver Proyecto</a>
             </div>
 
             <div class="card">
                 <h3>Unigestor</h3>
                 <p>Sistema administrativo multiuso.</p>
-                <a href="https://gitlab.com/stalin.jaime1591/unigestor.git" target="_blank">Ver Proyecto</a>
+                <a class="btn">Ver Proyecto</a>
             </div>
 
             <div class="card">
                 <h3>Tienda</h3>
-                <p>Sistema CRUD de tienda.</p>
-                <a href="https://gitlab.com/evel1n-group/tienda.git" target="_blank">Ver Proyecto</a>
+                <p>Sistema de tienda con CRUD completo.</p>
+                <a class="btn">Ver Proyecto</a>
             </div>
 
             <div class="card">
                 <h3>Escuela</h3>
-                <p>Sistema educativo escolar.</p>
-                <a href="https://gitlab.com/evel1n-group/escuela.git" target="_blank">Ver Proyecto</a>
+                <p>Sistema educativo.</p>
+                <a class="btn">Ver Proyecto</a>
             </div>
 
         </div>
     </section>
 
-    <section id="contacto" class="seccion">
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
         <h2>Contacto</h2>
         <p>📩 Email: <strong>evelin.ganchala2463@utc.edu.ec</strong></p>
         <p>🐱 GitHub / GitLab: <strong>evel1n</strong></p>
     </section>
 
     <footer>
-        <p>© 2025 Evelin Ganchala</p>
+        © 2025 Evelin Ganchala — Hosteado en GitHub Pages
     </footer>
 
 </body>
