@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Evelin Ganchala</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
     <header>
-        <h1>Mi Portafolio</h1>
+        <h1 class="logo">Evelin</h1>
         <nav>
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#proyectos">Proyectos</a>
@@ -18,17 +18,17 @@
     </header>
 
     <section class="hero">
-        <img src="assets/tu-foto.png" alt="Foto de Evelin">
-        <div>
-            <h2>Hola, soy <span class="nombre">Evelin Paola Ganchala Yancatipan</span></h2>
-            <p class="subtitulo">Desarrolladora Web | Backend | Laravel | Django</p>
+        <div class="hero-card">
+            <img src="assets/imagenes/foto.png" alt="Foto de Evelin" class="foto">
+            <h2>Hola, soy <span>Evelin Paola Ganchala Yancatipan</span></h2>
+            <p class="subtitulo">Desarrolladora Web • Backend • Laravel • Django</p>
         </div>
     </section>
 
     <section id="sobre-mi" class="seccion">
         <h2>Sobre mí</h2>
-        <p>
-            Tengo 22 años y soy estudiante de la 
+        <p class="texto">
+            Tengo <strong>22 años</strong> y soy estudiante de la 
             <strong>Universidad Técnica de Cotopaxi</strong>.  
             Me apasiona el desarrollo web, especialmente en 
             <strong>Laravel, Django, MySQL y PostgreSQL</strong>.  
@@ -37,9 +37,9 @@
     </section>
 
     <section id="proyectos" class="seccion">
-        <h2>Proyectos</h2>
+        <h2>Mis Proyectos</h2>
 
-        <div class="proyectos">
+        <div class="grid">
 
             <div class="card">
                 <h3>Center Adoption</h3>
@@ -55,7 +55,7 @@
 
             <div class="card">
                 <h3>Deporte</h3>
-                <p>CRUD de países, disciplinas y deportistas — Laravel.</p>
+                <p>CRUD completo con Laravel.</p>
                 <a href="https://gitlab.com/evel1n-group/deporte.git" target="_blank">Ver Proyecto</a>
             </div>
 
@@ -85,13 +85,13 @@
 
             <div class="card">
                 <h3>Tienda</h3>
-                <p>Sistema de tienda con CRUD completo.</p>
+                <p>Sistema CRUD de tienda.</p>
                 <a href="https://gitlab.com/evel1n-group/tienda.git" target="_blank">Ver Proyecto</a>
             </div>
 
             <div class="card">
                 <h3>Escuela</h3>
-                <p>Sistema educativo.</p>
+                <p>Sistema educativo escolar.</p>
                 <a href="https://gitlab.com/evel1n-group/escuela.git" target="_blank">Ver Proyecto</a>
             </div>
 
